@@ -19,6 +19,7 @@
 		826E20782DA86400004136E0 /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = 826E20772DA86400004136E0 /* Country.m */; };
 		826E207C2DA864F2004136E0 /* Name.m in Sources */ = {isa = PBXBuildFile; fileRef = 826E207B2DA864F2004136E0 /* Name.m */; };
 		826E207F2DA86619004136E0 /* CapitalInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 826E207E2DA86619004136E0 /* CapitalInfo.m */; };
+		826E20822DA869D3004136E0 /* Translation.m in Sources */ = {isa = PBXBuildFile; fileRef = 826E20812DA869D3004136E0 /* Translation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,8 @@
 		826E207B2DA864F2004136E0 /* Name.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Name.m; sourceTree = "<group>"; };
 		826E207D2DA86619004136E0 /* CapitalInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CapitalInfo.h; sourceTree = "<group>"; };
 		826E207E2DA86619004136E0 /* CapitalInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CapitalInfo.m; sourceTree = "<group>"; };
+		826E20802DA869D3004136E0 /* Translation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Translation.h; sourceTree = "<group>"; };
+		826E20812DA869D3004136E0 /* Translation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Translation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 				826E207B2DA864F2004136E0 /* Name.m */,
 				826E207D2DA86619004136E0 /* CapitalInfo.h */,
 				826E207E2DA86619004136E0 /* CapitalInfo.m */,
+				826E20802DA869D3004136E0 /* Translation.h */,
+				826E20812DA869D3004136E0 /* Translation.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -194,6 +199,7 @@
 				826E20582DA85A15004136E0 /* AppDelegate.m in Sources */,
 				826E20722DA85A85004136E0 /* FlagsAPI.m in Sources */,
 				826E20752DA85C3E004136E0 /* CountriesAPI.m in Sources */,
+				826E20822DA869D3004136E0 /* Translation.m in Sources */,
 				826E20692DA85A18004136E0 /* main.m in Sources */,
 				826E205B2DA85A15004136E0 /* SceneDelegate.m in Sources */,
 			);
