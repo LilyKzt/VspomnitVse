@@ -11,7 +11,7 @@
 
 NSString *baseURL = @"https://flagsapi.com";
 
-+ (NSString *)getCountryFlagImageURL:(NSString *)countryCode {
+- (NSString *)getCountryFlagImageUrlForCountryWithCode:(NSString *)countryCode {
     return [[NSString alloc] initWithFormat: @"%@/%@/flat/64.png", baseURL, countryCode];
 }
 

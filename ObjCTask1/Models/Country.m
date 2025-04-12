@@ -9,14 +9,30 @@
 
 @implementation Country
 
-- (instancetype)initWithDictionary: (NSDictionary *) dictionary {
+- (instancetype)initWithName:(NSString *)name
+                        cca2:(NSString *)cca2
+                        cca3:(NSString *)cca3
+                     capital:(NSArray<NSString *> *)capital
+                   languages:(NSDictionary *)languages
+                translations:(NSDictionary *)translations
+                     latlang:(NSArray *)latlang
+                        area:(NSInteger)area
+                  population:(NSInteger)population
+                 capitalInfo:(CapitalInfo *)capitalInfo
+                     borders:(NSArray<NSString *> *)borders{
     self = [super init];
     if (self) {
-        self.cca2 = dictionary[@"cca2"];
-        self.cca3 = dictionary[@"cca3"];
-        self.area = dictionary[@"area"];
-        self.flag = dictionary[@"flag"];
-        self.borders = dictionary[@"borders"];
+        self.name = name;
+        self.cca2 = cca2;
+        self.cca3 = cca3;
+        self.capital = capital;
+        self.languages = languages;
+        self.translations = translations;
+        self.latlng = latlang;
+        self.area = area;
+        self.population = population;
+        self.capitalInfo = capitalInfo;
+        self.borders = borders;
         self.globalPopulationRank = 0;
     }
     return self;

@@ -17,9 +17,10 @@
 		826E20722DA85A85004136E0 /* FlagsAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 826E20712DA85A85004136E0 /* FlagsAPI.m */; };
 		826E20752DA85C3E004136E0 /* CountriesAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 826E20742DA85C3D004136E0 /* CountriesAPI.m */; };
 		826E20782DA86400004136E0 /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = 826E20772DA86400004136E0 /* Country.m */; };
-		826E207C2DA864F2004136E0 /* Name.m in Sources */ = {isa = PBXBuildFile; fileRef = 826E207B2DA864F2004136E0 /* Name.m */; };
 		826E207F2DA86619004136E0 /* CapitalInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 826E207E2DA86619004136E0 /* CapitalInfo.m */; };
 		826E20822DA869D3004136E0 /* Translation.m in Sources */ = {isa = PBXBuildFile; fileRef = 826E20812DA869D3004136E0 /* Translation.m */; };
+		82DD66732DA9C4130081EC19 /* CountryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DD66722DA9C4130081EC19 /* CountryTableViewCell.m */; };
+		82DD66782DAA73690081EC19 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DD66772DAA73690081EC19 /* DetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,12 +42,14 @@
 		826E20742DA85C3D004136E0 /* CountriesAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountriesAPI.m; sourceTree = "<group>"; };
 		826E20762DA863FF004136E0 /* Country.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Country.h; sourceTree = "<group>"; };
 		826E20772DA86400004136E0 /* Country.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Country.m; sourceTree = "<group>"; };
-		826E207A2DA864F2004136E0 /* Name.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Name.h; sourceTree = "<group>"; };
-		826E207B2DA864F2004136E0 /* Name.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Name.m; sourceTree = "<group>"; };
 		826E207D2DA86619004136E0 /* CapitalInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CapitalInfo.h; sourceTree = "<group>"; };
 		826E207E2DA86619004136E0 /* CapitalInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CapitalInfo.m; sourceTree = "<group>"; };
 		826E20802DA869D3004136E0 /* Translation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Translation.h; sourceTree = "<group>"; };
 		826E20812DA869D3004136E0 /* Translation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Translation.m; sourceTree = "<group>"; };
+		82DD66712DA9C4130081EC19 /* CountryTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountryTableViewCell.h; sourceTree = "<group>"; };
+		82DD66722DA9C4130081EC19 /* CountryTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountryTableViewCell.m; sourceTree = "<group>"; };
+		82DD66762DAA73690081EC19 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		82DD66772DAA73690081EC19 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,19 +82,20 @@
 		826E20552DA85A15004136E0 /* ObjCTask1 */ = {
 			isa = PBXGroup;
 			children = (
+				82DD66742DAA730E0081EC19 /* ViewControllers */,
 				826E20792DA86405004136E0 /* Models */,
 				826E206F2DA85A5C004136E0 /* API */,
 				826E20562DA85A15004136E0 /* AppDelegate.h */,
 				826E20572DA85A15004136E0 /* AppDelegate.m */,
 				826E20592DA85A15004136E0 /* SceneDelegate.h */,
 				826E205A2DA85A15004136E0 /* SceneDelegate.m */,
-				826E205C2DA85A15004136E0 /* ViewController.h */,
-				826E205D2DA85A15004136E0 /* ViewController.m */,
 				826E205F2DA85A15004136E0 /* Main.storyboard */,
 				826E20622DA85A18004136E0 /* Assets.xcassets */,
 				826E20642DA85A18004136E0 /* LaunchScreen.storyboard */,
 				826E20672DA85A18004136E0 /* Info.plist */,
 				826E20682DA85A18004136E0 /* main.m */,
+				82DD66712DA9C4130081EC19 /* CountryTableViewCell.h */,
+				82DD66722DA9C4130081EC19 /* CountryTableViewCell.m */,
 			);
 			path = ObjCTask1;
 			sourceTree = "<group>";
@@ -112,14 +116,23 @@
 			children = (
 				826E20772DA86400004136E0 /* Country.m */,
 				826E20762DA863FF004136E0 /* Country.h */,
-				826E207A2DA864F2004136E0 /* Name.h */,
-				826E207B2DA864F2004136E0 /* Name.m */,
 				826E207D2DA86619004136E0 /* CapitalInfo.h */,
 				826E207E2DA86619004136E0 /* CapitalInfo.m */,
 				826E20802DA869D3004136E0 /* Translation.h */,
 				826E20812DA869D3004136E0 /* Translation.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		82DD66742DAA730E0081EC19 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				826E205D2DA85A15004136E0 /* ViewController.m */,
+				826E205C2DA85A15004136E0 /* ViewController.h */,
+				82DD66762DAA73690081EC19 /* DetailsViewController.h */,
+				82DD66772DAA73690081EC19 /* DetailsViewController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,9 +207,10 @@
 			files = (
 				826E20782DA86400004136E0 /* Country.m in Sources */,
 				826E205E2DA85A15004136E0 /* ViewController.m in Sources */,
+				82DD66782DAA73690081EC19 /* DetailsViewController.m in Sources */,
 				826E207F2DA86619004136E0 /* CapitalInfo.m in Sources */,
-				826E207C2DA864F2004136E0 /* Name.m in Sources */,
 				826E20582DA85A15004136E0 /* AppDelegate.m in Sources */,
+				82DD66732DA9C4130081EC19 /* CountryTableViewCell.m in Sources */,
 				826E20722DA85A85004136E0 /* FlagsAPI.m in Sources */,
 				826E20752DA85C3E004136E0 /* CountriesAPI.m in Sources */,
 				826E20822DA869D3004136E0 /* Translation.m in Sources */,

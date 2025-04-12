@@ -6,12 +6,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Country.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CountriesAPI : NSObject
 
-- (NSArray *)fetchCountriesWithCompletion:(void (^)(NSDictionary *response, NSError *error))completionHandler;
+- (NSArray *)fetchCountriesWithCompletion:(void (^)(NSArray<Country *> *countries, NSError *error))completionHandler;
 
 @end
 

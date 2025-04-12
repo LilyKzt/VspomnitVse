@@ -9,13 +9,13 @@
 
 @implementation CountriesAPI
 
-- (NSArray *)fetchCountriesWithCompletion:(void (^)(NSDictionary *response, NSError *error))completionHandler {
+- (NSArray *)fetchCountriesWithCompletion:(void (^)(NSArray<Country *> *countries, NSError *error))completionHandler {
     NSURL *url = [NSURL URLWithString:@"https://restcountries.com/v3.1/all"];
     [self get: url withCompletion: completionHandler];
     return [[NSArray alloc] init];
 }
 
-- (void)get:(NSURL *)url withCompletion:(void (^)(NSDictionary *response, NSError *error))completionHandler {
+- (void)get:(NSURL *)url withCompletion:(void (^)(NSArray<Country *> *countries, NSError *error))completionHandler {
     
     
     // Create the NSURLSession
@@ -36,8 +36,25 @@
             // Call the completion handler with a parsing error
             completionHandler(nil, jsonError);
         } else {
+            NSMutableArray *countries = [[NSMutableArray alloc] init];
+            
+            for (NSDictionary *item in jsonResponse) {
+                Country *country = [[Country alloc] initWithName:item[@"name"][@"official"]
+                                                            cca2:item[@"cca2"]
+                                                            cca3:item[@"cca3"]
+                                                         capital: item[@"capital"][0]
+                                                       languages:item[@"languages"]
+                                                    translations:item[@"translations"]
+                                                         latlang:item[@"latlng"]
+                                                            area:item[@"area"]
+                                                      population:item[@"population"]
+                                                     capitalInfo:item[@"capitalInfo"]
+                                                         borders:item[@"borders"]
+                ];
+                [countries addObject:country];
+            }
             // Call the completion handler with the JSON response
-            completionHandler(jsonResponse, nil);
+            completionHandler(countries, nil);
         }
     }];
     

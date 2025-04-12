@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FlagsAPI : NSObject
 
-- (NSString *)getCountryFlagImageURL:(NSString *)countryCode;
+- (NSString *)getCountryFlagImageUrlForCountryWithCode:(NSString *)countryCode;
 
 @end
 
